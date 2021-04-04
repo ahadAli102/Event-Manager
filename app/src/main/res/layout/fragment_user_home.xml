@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserHomeFragment">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/profileImageId"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/profile"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/userNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Md. Ahad Ali"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/userEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/userNameId"
+                android:text="ahad15-12484@diu.edu.bd"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:linksClickable="true">
+
+            </TextView>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/homeProgressId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ProgressBar>
+        <RelativeLayout
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+
+                    android:id="@+id/editIconId"
+                    android:src="@drawable/ic_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                </ImageView>
+                <TextView
+                    android:id="@+id/editNameTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/editIconId"
+                    android:text="Edit user name"
+                    android:textColor="@color/black"
+                    android:textSize="25sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:text="Sign Out"
+            android:id="@+id/signOutButtonId"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/single_button_design"
+            >
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

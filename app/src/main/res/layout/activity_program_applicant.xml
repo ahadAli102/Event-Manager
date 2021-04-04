@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.ProgramApplicantActivity">
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Applicants List"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/ProgramApplicantActivityTextId"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/ProgramApplicantActivityTextId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ProgramApplicantActivityRecyclerViewId"
+        tools:listitem="@layout/single_program_applicants_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_baseline_email_24"
+        android:id="@+id/ProgramApplicantActivityFloatingId">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/single_item_design"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/single_programTitleTextViewId"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPC Take off"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/single_programImageViewId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/single_programStartTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Start from 15th january at 10:30am"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/single_programEndTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start from 15th january at 10:30am"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

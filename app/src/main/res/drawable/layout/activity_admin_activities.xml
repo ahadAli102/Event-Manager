@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.AdminActivitiesActivity">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Add Your Note"
+            android:id="@+id/AdminActivitiesTopText"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/AdminActivitiesMiddle"
+            android:layout_marginTop="3dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_below="@id/AdminActivitiesTopText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="Enter Activity"
+                android:id="@+id/AdminActivitiesNoteNameEditTextId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:hint="Enter Description"
+                android:layout_marginTop="5dp"
+                android:maxLines="5"
+                android:gravity="bottom"
+                android:id="@+id/AdminActivitiesNoteNameDescriptionTextId"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            </EditText>
+
+            <Button
+                android:text="Upload Image"
+                android:id="@+id/AdminActivitiesUploadButtonId"
+                android:textAllCaps="false"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/AdminActivitiesMiddle"
+            android:layout_above="@id/AdminActivitiesSaveButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/ic_blank"
+                    android:id="@+id/AdminActivitiesBlankImageId"
+                    android:layout_width="250dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="250dp">
+
+                </ImageView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/AdminActivitiesUploadRecycleId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:text="Save"
+            android:textAllCaps="false"
+            android:id="@+id/AdminActivitiesSaveButtonId"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </RelativeLayout>
+</LinearLayout>

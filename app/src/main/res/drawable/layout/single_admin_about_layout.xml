@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/single_item_design">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adminAboutSingleImageId"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/adminAboutSingleImageId"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/adminAboutSingleNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This will be a long big name"
+            android:textSize="20sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/adminAboutSingleDesignationId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Secretary"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:maxLines="2"/>
+        <TextView
+            android:id="@+id/adminAboutSingleWingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Development"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/adminAboutSingleEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ahad15-12484@diu.edu.bd"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</RelativeLayout>

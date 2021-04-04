@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <androidx.cardview.widget.CardView
+       android:padding="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:padding="10dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/single_item_design">
+
+           <TextView
+               android:text="Name"
+               android:maxLines="1"
+               android:ellipsize="end"
+               android:id="@+id/singleActivitiesNameId"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </TextView>
+           <TextView
+               android:text="Description"
+               android:maxLines="1"
+               android:ellipsize="end"
+               android:id="@+id/singleActivitiesDescriptionId"
+               android:textSize="14sp"
+               android:layout_marginLeft="7dp"
+               android:textColor="@color/black"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </TextView>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/single_activities_recyclerView"
+               tools:listitem="@layout/single_activities_list"
+               android:layout_width="match_parent"
+               android:layout_height="250dp">
+           </androidx.recyclerview.widget.RecyclerView>
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+</LinearLayout>

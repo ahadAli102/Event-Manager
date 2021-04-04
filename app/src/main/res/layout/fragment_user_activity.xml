@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.UserActivityFragment">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="Activities List"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/UserActivityFragmentHeading"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_below="@id/UserActivityFragmentHeading"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:queryHint="enter title"
+            android:id="@+id/UserActivityFragmentSearchViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.SearchView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserActivityFragmentSearchViewId"
+            android:id="@+id/UserActivityFragmentAllButtonId"
+            android:text="all"
+            android:background="@drawable/single_button_design">
+
+        </Button>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/UserActivityFragmentAllButtonId"
+            android:id="@+id/UserActivityFragmentListRecycleId"
+            tools:listitem="@layout/single_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/UserActivityFragmentListProgressId"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+</FrameLayout>

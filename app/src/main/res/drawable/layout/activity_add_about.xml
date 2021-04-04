@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.AddAboutActivity">
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Add Your Note"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </TextView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <EditText
+                    android:hint="Name"
+                    android:id="@+id/AddAboutActivityNameEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+                <EditText
+                    android:hint="Email"
+                    android:id="@+id/AddAboutActivityEmailEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+                <EditText
+                    android:hint="Designation"
+                    android:id="@+id/AddAboutActivityDesignationEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select wing"
+                        android:id="@+id/AddAboutActivityWingButtonId"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="not selected"
+                        android:textSize="20dp"
+                        android:id="@+id/AddAboutActivityWingTextId"
+                        android:textColor="#040303"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:text="pick Image"
+                    android:id="@+id/AddAboutActivityUploadButtonId"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Button>
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/ic_blank"
+                    android:id="@+id/AddAboutActivityBlankImageId"
+                    android:layout_width="250dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="250dp">
+
+                </ImageView>
+                <Button
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:id="@+id/AddAboutActivitySaveButtonId"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Button>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

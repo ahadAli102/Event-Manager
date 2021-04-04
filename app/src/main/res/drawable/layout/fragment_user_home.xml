@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserHomeFragment">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Name"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/userNameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="Email"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/userEmailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Edit user name"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/editIconId"
+                android:id="@+id/editNameTextId"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ImageView
+
+                android:id="@+id/editIconId"
+                android:src="@drawable/ic_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <Button
+            android:text="Sign Out"
+            android:id="@+id/signOutButtonId"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        </Button>
+        <ProgressBar
+            android:id="@+id/homeProgressId"
+            android:layout_margin="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
